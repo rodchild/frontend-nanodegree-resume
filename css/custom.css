@@ -8,10 +8,7 @@
 }
 
 .projectImage{
-
-	width: 50%;
-	background-size: cover;
-	
+background-size: cover;
 }
 .courseUrl{
 	margin-bottom: 10px;
@@ -37,12 +34,13 @@ h3{
 }
 
 #skills {
-  
+
   display: inline-block;
-  
+
 }
 
 .clearfix{
-	background:  url(../images/pointer-clicking-inbox-lrg.jpg )  ;
-	background-size: cover;
+	/*background:  url(../images/pointer-clicking-inbox-lrg.jpg )  ;
+	background-size: cover;*/
+  background-color: rgba(107, 91, 85, 0.22);
 }

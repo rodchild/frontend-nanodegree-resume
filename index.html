@@ -16,8 +16,12 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 -->
 <head>
   <!-- This tells the browser how to read the document. -->
+  <title>Portfolio | Ducarmel Zephyr - Front End Developer</title>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ian Lunn is a Freelance Web Designer &amp; Developer. He uses the latest web technologies to produce creative and effective websites.">
+  <link rel="author" href="https://plus.google.com/+Rodchild/">
+  <link rel="publisher" href="https://plus.google.com/+Rodchild/">
   <!-- Tells the browser what the title of this page should be. -->
   <title>Ducarmel Zephyr | Resume</title>
 
@@ -51,7 +55,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   Uncomment the <script> tag below when you're ready to add an interactive
   Google Map to your resume!
   -->
-   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> 
+   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
   <meta name="viewport" content="width=device-width">
 </head>
@@ -65,18 +69,88 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     resume below. You can pretty easily figure out what each section will
     display by looking at the id or at what's written between the <h2> tags.
     -->
-    <div id="header" class="center-content clearfix">
+      <header>
+        <h1>Ducarmel Rodchild Zephyr</h1>
+        <h2>Front-end developer</h2>
+        <nav role="navigations" class="menu">
+          <ul id="menu-nav_menu" class="">
+            <li id="menu-item-4166" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4166">
+                <a title="About Ducarmel Zephyr – Freelance Front End Developer" href="http://ianlunn.co.uk/about/">About</a>
+            </li>
+            <li id="menu-item-4167" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item menu-item-4167">
+              <a title="Portfolio of Front End Development Projects" href="http://rodchild.github.io/frontend-nanodegree-resume/">Portfolio</a>
+            </li>
+            <li id="menu-item-4168" class="lab-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-4168">
+              <a title="Open Source Projects, Demos, and Experiments" href="/lab/">Code Lab</a>
+            </li>
+            <li id="menu-item-4164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4164">
+              <a title="Articles on Front End Development and Other Areas of the Web" href="http://ianlunn.co.uk/articles/">Articles</a>
+            </li>
+            <li id="menu-item-4165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4165">
+              <a title="Send a Message or Project Request to Ian" href="http://ianlunn.co.uk/contact/">Contact</a>
+            </li>
+
+          </ul>
+        </nav>
+      </header>
+    <div class="center-content clearfix">
+      <div>
+        <h1> Building creative & effective websites</h1>
+        <h2>Specialising in JavaScript, WordPress, responsive design, animation, and performance</h2>
+      </div>
       <ul id="topContacts" class='flex-box'></ul>
     </div>
     <div style='clear: both;'></div>
     <div id="workExperience" class='gray'>
       <h2>Work Experience</h2>
     </div>
+
     <div id="projects">
       <h2>Projects</h2>
+    <div>
+      <div class="mock-project">
+          <a href="http://rodchild.github.io/Udacity-mug/" style="background-color: #000">
+            <img src="http://rodchild.github.io/Udacity-mug/images/mug.png" alt="REMIXED">
+          </a>
+
+      </div>
+      <div class="mock-project">
+            <a href="http://rodchild.github.io/frontend-nanodegree-arcade-game/" style="background-color: #000">
+            <img src="https://github.com/rodchild/frontend-nanodegree-arcade-game/blob/master/images/frogger.png?raw=true" alt="REMIXED">
+          </a>
+
+      </div>
+    </div>
     </div>
     <div id="education" class='gray'>
       <h2>Education</h2>
+          <div>
+              <div class="mock-project">
+
+          <a href="https://www.udacity.com/course/ud304" style="background-color: #000">
+            <img src="https://github.com/rodchild/frontend-nanodegree-arcade-game/blob/master/images/introHTML&CSS.png?raw=true" alt="REMIXED">
+          </a>
+          <p>Intro to HTML and CSS</p>
+
+      </div>
+      <div class="mock-project">
+
+          <a href="https://www.edx.org/course/introduction-linux-linuxfoundationx-lfs101x-2#.VPnmyfnF98E" style="background-color: #000">
+            <img src="https://github.com/rodchild/frontend-nanodegree-arcade-game/blob/master/images/linuxFoundCert.png?raw=true" alt="REMIXED">
+          </a>
+          <p>Introduction to Linux</p>
+
+      </div>
+      <div class="mock-project">
+            <a href="https://www.udacity.com/course/ud804" style="background-color: #000">
+            <img src="https://github.com/rodchild/frontend-nanodegree-arcade-game/blob/master/images/javascriptBasics.png?raw=true" alt="REMIXED">
+          </a>
+          <p>JavaScript Basics</p>
+
+      </div>
+    </div>
+
+
     </div>
     <div id="mapDiv">
       <h2>Where I've Lived and Worked</h2>
@@ -93,7 +167,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   writing. In resumeBuilder.js, you'll be writing code that builds the resume
   dynamically when this website, index.html, is opened.
   -->
-  
+
   <script src="js/resumeBuilder.js"></script>
 
 
@@ -140,7 +214,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     }
     if(document.getElementById('map') === null) {
       document.getElementById('mapDiv').style.display = 'none';
-    } 
+    }
   </script>
 </body>
 </html>
