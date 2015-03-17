@@ -70,26 +70,28 @@
 
      			"schools":
      			[
-     			/*	{
-     					"name": "Universite Laval",
-     					"location": "Quebec",
-     					"degree": "Bacc",
-     					"majors": ["CS"],
-     					"dates": 2013,
-     					"url": "http://ulaval.com",
 
+                    {
+                        "name": "Udacity",
+                        "location": "Mountain View, CA Online",
+                        "degree": "Front-End web developer",
+                        "majors": [" Web development"],
+                        "dates": 2015,
+                        "url": "https://www.udacity.com/nanodegree/",
 
-     				},*/
+                    },
 
-                	{
-                		"name": "College Bois de Boulogne",
-     					"location": "Montreal",
-     					"degree": "College degree",
+     				{
+     					"name": "College Bois de Boulogne",
+     					"location": "Montreal, QC",
+     					"degree": "Associate",
      					"majors": ["CS"],
      					"dates": 2000,
      					"url": "http://bdeb.qc.ca/",
 
-     		 		}
+
+     				}
+
      			],
 
      			"onlineCourses":
@@ -361,7 +363,7 @@
      			$(".education-entry:last").append(formattedSchoolMajors);
 
      		}
-     			$("#education").append(HTMLonlineClasses);
+     		/*	$("#education").append(HTMLonlineClasses);
      			$("#education").append(HTMLschoolStart);
 
                 var counter = 0;
@@ -387,7 +389,7 @@
                     $(".education-entry:last").append(formattedUrl.slice(4, formattedUrl.length));
 
 				}
-
+*/
 
 		}
 
