@@ -10,6 +10,7 @@
      				"mobile": "613 501 0347",
      				"email": "rodchild@gmail.com",
      				"github": "@rodchild",
+                    "linkedin": "ca.linkedin.com/in/ducarmel",
      				"location": "Ottawa ON",
      				},
      		"WelcomeMessage": "lorem ipsum dolor sit amet etc etc etc.",
@@ -257,12 +258,15 @@
 
 //function display footer
        function displayFooter(contact)
-        {
+        {//replace("#", education.onlineCourses[course].url);
 
             $('#footerContacts').append(HTMLmobile.replace("%data%", contact.mobile));
             $('#footerContacts').append(HTMLemail.replace("%data%", contact.email));
-            $('#footerContacts').append(HTMLtwitter.replace("%data%", contact.github));
-            $('#footerContacts').append(HTMLtwitter.replace("%data%", contact.location));
+            $('#footerContacts').append(HTMLgithub.replace("%data%", contact.github));
+           // HTMLlinkedin.replace("%data%", contact.linkedin)
+            $('#footerContacts').append(HTMLlinkedin.replace("%data%", contact.linkedin));
+            $('#footerContacts').append(HTMLlocation.replace("%data%", contact.location));
+
 
         }
 
