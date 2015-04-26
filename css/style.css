@@ -4,18 +4,46 @@
   font-family: 'Roboto', sans-serif;
 }
 
+@keyframes myAnimation {
+  0%   {background-color: rgb(57, 115, 115); }
+  25%  {background-color: rgb(99, 88, 65); }
+  50%  {background-color: rgb(64, 128, 74); }
+  75%  {background-color: rgb(207, 150, 86); }
+  100% {background-color: rgb(0, 64, 90); }
+
+}
+
 .clearfix {
   overflow: auto;
 }
 
+
 .education-entry, .work-entry, .project-entry {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+
 }
 
-header{
-  background-color: rgb(0, 123, 128);
+.education-entry {
+  text-align: center;
 
+}
+
+.education-entry:first-child {
+  border-right:  1px solid grey;
+}
+
+.work-entry, .education-entry > a {
+ text-align: center;
+}
+
+
+header {
+  background-color: rgb(0, 123, 128);
+  position: fixed;
+  width: 63.2%;
 }
 
 h1 {
@@ -25,9 +53,11 @@ h1 {
   display: inline;
 
 }
+
 span {
   text-align: center;
 }
+
 div > h1 {
   font-weight: bold;
   font-size: 30px;
@@ -80,7 +110,7 @@ h2, h3, h4, h5 {
   font-size: 14px;
   color: #999999;
   line-height: 16px;
-  float: left;
+  text-align: center;
 }
 
 a > img {
@@ -95,12 +125,13 @@ a > img {
   position: relative;
   display: inline-block;
 }
+
 .location-text {
   font-style: italic;
   font-size: 14px;
   color: #999999;
   line-height: 16px;
-  float: right;
+  text-align: center;
 
 }
 
@@ -137,6 +168,7 @@ a {
 
 .orange-text {
   color: #F5AE23;
+
 }
 
 .white-text {
@@ -146,10 +178,13 @@ a {
 }
 
 .gray {
+  display: flex;
   background-color: #F3F3F3;
-  padding-bottom: 10px;
-  clear:both;
+  padding: 5px;
+  margin: 5px;
+
 }
+
 
 .dark-gray {
   background-color: #4A4A4A;
@@ -165,25 +200,34 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
+
 }
 
-
-#menu-nav_menu{
- display: -webkit-flex;
+#menu-nav_menu {
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
   background-color: #222;
+  opacity: 0.7;
   color: white;
 }
 
+#center-text {
+  background-color: skyblue;
+  border-radius: 10px;
+  margin: 10px 0 0 0;
+}
+
 .center-content {
-  padding-top: 30px;
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-bottom: 30px
+  padding: 100px 120px 0 120px;
+  animation-name: myAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
 }
 
 ul {
