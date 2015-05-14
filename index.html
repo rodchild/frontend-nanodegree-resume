@@ -14,27 +14,26 @@ The <head> of a website generally links to important resources the page will
 need to load. You'll see a lot of <link>s to CSS files for styles and
 <scripts> for JavaScript files to build interactions.
 -->
+
 <head>
-  <!-- This tells the browser how to read the document. -->
-  <title>Portfolio | Ducarmel Zephyr - Front End Developer</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ducarmel Zephyr is a Freelance Web Developer. He uses the latest web technologies to produce creative and effective websites.">
-  <link rel="author" href="https://plus.google.com/+Rodchild/">
-  <link rel="publisher" href="https://plus.google.com/+Rodchild/">
-  <!-- Tells the browser what the title of this page should be. -->
-  <title>Ducarmel Zephyr | Resume</title>
+    <!-- This tells the browser how to read the document. -->
+    <title>Portfolio | Ducarmel Zephyr - Front End Developer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ducarmel Zephyr is a Freelance Web Developer. He uses the latest web technologies to produce creative and effective websites.">
+    <link rel="author" href="https://plus.google.com/+Rodchild/">
+    <link rel="publisher" href="https://plus.google.com/+Rodchild/">
+    <!-- Tells the browser what the title of this page should be. -->
+    <title>Ducarmel Zephyr | Resume</title>
 
-  <!-- Load the page styles. -->
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- Load the page styles. -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 
 
-  <!-- Rodchild custom styling -->
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
-  <!--
+    <!-- Rodchild custom styling -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 
-  <!--
-  jQuery is a common JavaScript library for reading and making changes to the
+    <!--jQuery is a common JavaScript library for reading and making changes to the
   Document Object Model (DOM). The DOM is a tree that contains information
   about what is actually visible on a website.
 
@@ -44,94 +43,101 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   object. When JavaScript makes something interesting happen on a
   website, it's likely the action happened because JavaScript changed
   the DOM. jQuery is fast and easy to use, but it doesn't do anything
-  you can't accomplish with vanilla (regular) JavaScript.
-  -->
-  <script  src="js/jQuery.js"></script>
+  you can't accomplish with vanilla (regular) JavaScript.-->
+    <script src="js/jQuery.js"></script>
 
-  <!-- More on helper.js in the class -->
-  <script src="js/helper.js"></script>
+    <!-- More on helper.js in the class -->
+    <script src="js/helper.js"></script>
 
-  <!--
+    <!--
   Uncomment the <script> tag below when you're ready to add an interactive
   Google Map to your resume!
   -->
-   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 </head>
-<body unresolved>
-  <div id="main">
-       <!-- You'll be deleting this line in the course -->
 
-    <!--
+<body unresolved>
+    <div id="main">
+        <!-- You'll be deleting this line in the course -->
+
+        <!--
     Everything from here to the <script> tag below is the skeleton of your
     website. Your code will add information to each of the sections of the
     resume below. You can pretty easily figure out what each section will
     display by looking at the id or at what's written between the <h2> tags.
     -->
-      <header>
-        <h1>Ducarmel Rodchild Zephyr</h1>
-        <h2>Front-end developer</h2>
-        <hr> <!-- define a thematic change in the content -->
+        <header>
+            <h1>Ducarmel Rodchild Zephyr</h1>
+            <h2>Front-end developer</h2>
+            <hr>
+            <!-- define a thematic change in the content -->
 
-        <nav role="navigations" class="menu">
-          <ul id="menu-nav_menu" class="">
-            <li id="menu-item-4166" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4166">
-                <a title="About Ducarmel Zephyr – Freelance Front End Developer" href="http://rodchild.github.io/frontend-nanodegree-resume/portfolio.html" target="_self">Portfolio</a>
-            </li>
-            <li id="menu-item-4167" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8
+            <nav role="navigations" class="menu">
+                <ul id="menu-nav_menu" class="">
+                    <li id="menu-item-4166" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4166">
+                        <a title="About Ducarmel Zephyr – Freelance Front End Developer" href="http://rodchild.github.io/frontend-nanodegree-resume/portfolio.html" target="_self">Portfolio</a>
+                    </li>
+                    <li id="menu-item-4167" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8
             current_page_item menu-item-4167">
-              <a title="Work experience" href="#workExperience">Work experience</a>
-            </li>
-            <li id="menu-item-4168" class="lab-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-4168">
-              <a title="Education" href="#education">Education</a>
-            </li>
-         <!--   <li id="menu-item-4165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4165">
-              <a title="Send a Message or Project Request to Ducarmel" href="contacts.html" target="_self">Contact</a>
-            </li> -->
-          </ul>
-        </nav>
-      </header>
-      <hr> <!-- define a thematic change in the content -->
-      <div class="center-content clearfix" style="background-color: coral;">
-        <div id="center-text">
-          <h1 > Building effective websites. Write clean and efficient code</h1>
-          <h2>Specializing in JavaScript, responsive design and performance</h2>
+                        <a title="Work experience" href="#workExperience">Work experience</a>
+                    </li>
+                    <li id="menu-item-4168" class="lab-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-4168">
+                        <a title="Education" href="#education">Education</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <!-- define a thematic change in the content -->
+        <div class="center-content clearfix" style="background-color: coral;">
+            <div id="center-text">
+                <h1> Building effective websites. Write clean and efficient code</h1>
+                <h2>Specializing in JavaScript, responsive design and performance</h2>
+            </div>
+            <ul id="topContacts" class='flex-box'></ul>
         </div>
-        <ul id="topContacts" class='flex-box'></ul>
-      </div>
 
-      <div style='clear: both;'></div>
-      <hr> <!-- define a thematic change in the content -->
-      <h2>Work Experience</h2>
-      <hr> <!-- define a thematic change in the content -->
-      <div id="workExperience" class='gray'></div>
+        <div style='clear: both;'></div>
+        <hr>
+        <!-- define a thematic change in the content -->
+        <h2>Work Experience</h2>
+        <hr>
+        <!-- define a thematic change in the content -->
+        <div id="workExperience" class='gray'></div>
 
-      <hr> <!-- define a thematic change in the content -->
-      <h2>Education</h2>
-      <hr> <!-- define a thematic change in the content -->
-      <div id="education" class='gray'></div>
-      <hr> <!-- define a thematic change in the content -->
-      <div id="mapDiv">
-        <h2>Where I've Lived and Worked</h2>
-      </div>
-      <hr> <!-- define a thematic change in the content -->
-      <div id="letsConnect" class='dark-gray'>
-        <h2 class='orange center-text'>Let's Connect</h2>
-        <ul id="footerContacts" class="flex-box"></ul>
-      </div>
-      <hr> <!-- define a thematic change in the content -->
-  </div>
-  <hr> <!-- define a thematic change in the content -->
+        <hr>
+        <!-- define a thematic change in the content -->
+        <h2>Education</h2>
+        <hr>
+        <!-- define a thematic change in the content -->
+        <div id="education" class='gray'></div>
+        <hr>
+        <!-- define a thematic change in the content -->
+        <div id="mapDiv">
+            <h2>Where I've Lived and Worked</h2>
+        </div>
+        <hr>
+        <!-- define a thematic change in the content -->
+        <div id="letsConnect" class='dark-gray'>
+            <h2 class='orange center-text'>Let's Connect</h2>
+            <ul id="footerContacts" class="flex-box"></ul>
+        </div>
+        <hr>
+        <!-- define a thematic change in the content -->
+    </div>
+    <hr>
+    <!-- define a thematic change in the content -->
 
-  <!--
+    <!--
   The next line tells the browser where to download the JavaScript file you'll be
   writing. In resumeBuilder.js, you'll be writing code that builds the resume
   dynamically when this website, index.html, is opened.
   -->
 
-  <script src="js/resumeBuilder.js"></script>
+    <script src="js/resumeBuilder.js"></script>
 
 
-  <!--
+    <!--
   These scripts are written in JavaScript. You'll be breaking them down as part of
   a quiz. Essentially, the next few lines are checking to see if you have not
   changed each section of the resume. If you have not made any changes to a section
@@ -139,42 +145,43 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   course.
   -->
 
-  <script type="text/javascript">
-    // Notice how all of a sudden there's JavaScript inside this HTML
-    // document? You can write JavaScript between <script> tags. At the end of your
-    // JavaScript, don't forget the closing script tag with the slash (/).
+    <script type="text/javascript">
+        // Notice how all of a sudden there's JavaScript inside this HTML
+        // document? You can write JavaScript between <script> tags. At the end of your
+        // JavaScript, don't forget the closing script tag with the slash (/).
 
 
-    // Also, this is a JavaScript style comment. You can comment in JavaScript with:
+        // Also, this is a JavaScript style comment. You can comment in JavaScript with:
 
-    //   two slashes for all following characters on a single line, or
+        // two slashes for all following characters on a single line, or
 
-    /*
-        an opening and closing set of slash asterisks for block comments.
-    */
+        /*
+            an opening and closing set of slash asterisks for block comments.
+        */
 
 
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'none';
-    }
-    if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.display = 'none';
-    }
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
-    }
-    if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
-    }
-    if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
-    }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('letsConnect').style.display = 'none';
-    }
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
-    }
-  </script>
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('topContacts').style.display = 'none';
+        }
+        if (document.getElementsByTagName('h1').length === 0) {
+            document.getElementById('header').style.display = 'none';
+        }
+        if (document.getElementsByClassName('work-entry').length === 0) {
+            document.getElementById('workExperience').style.display = 'none';
+        }
+        if (document.getElementsByClassName('project-entry').length === 0) {
+            document.getElementById('projects').style.display = 'none';
+        }
+        if (document.getElementsByClassName('education-entry').length === 0) {
+            document.getElementById('education').style.display = 'none';
+        }
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('letsConnect').style.display = 'none';
+        }
+        if (document.getElementById('map') === null) {
+            document.getElementById('mapDiv').style.display = 'none';
+        }
+    </script>
 </body>
+
 </html>
