@@ -10,64 +10,19 @@
   50%  {background-color: rgb(64, 128, 74); }
   75%  {background-color: rgb(207, 150, 86); }
   100% {background-color: rgb(0, 64, 90); }
-
 }
 
-.clearfix {
-  overflow: auto;
-}
-
-
-.education-entry, .work-entry, .project-entry {
-  padding-left: 10px;
-  padding-right: 10px;
-  flex-wrap: wrap;
-  width: 100%;
-
-}
-
-.education-entry {
+#education {
   text-align: center;
-
-}
-
-.education-entry:first-child {
-  border-right:  1px solid grey;
+  display: inline-block;
+  width: 100%; 
 }
 
 .work-entry, .education-entry > a {
  text-align: center;
 }
 
-
-header {
-  background-color: rgb(0, 123, 128);
-  position: fixed;
-  width: 63.2%;
-}
-
-h1 {
-  font-size: 30px;
-  color: white;
-  line-height: 48px;
-  display: inline;
-
-}
-
-span {
-  text-align: center;
-}
-
-div > h1 {
-  font-weight: bold;
-  font-size: 30px;
-  color: black;
-  display: inherit;
-  text-align: center;
-
-}
-
-div > h2 {
+div > h2, h3 {
   font-weight: bold;
   font-size: 20px;
   color: black;
@@ -76,16 +31,20 @@ div > h2 {
   text-align: center;
 }
 
-header > h2 {
-  font-size: 30px;
+header {
+ 
+}
+
+header > div > h2, h6 {
   color: white;
-  line-height: 18px;
-  float: right;
+  color: #484848;
+  margin: 0 0 2% 0;
+  text-align: center;
 }
 
 
 h3 {
-  font-style: italic;
+  /*font-style: italic;*/
   font-size: 20px;
   color: #000000;
   line-height: 22px;
@@ -97,13 +56,6 @@ h4 {
   color: #4A4A4A;
   line-height: 17px;
 }
-
-h2, h3, h4, h5 {
-  padding:10px;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
 
 .date-text {
   font-style: italic;
@@ -154,7 +106,6 @@ a {
   font-size: 18px;
   color: #F3F3F3;
   line-height: 28px;
-
 }
 
 #skillsH3 {
@@ -168,51 +119,32 @@ a {
 
 .orange-text {
   color: #F5AE23;
-
 }
 
 .white-text {
   font-weight: bold;
   color: #FFFFFF;
-
 }
-
-.gray {
-  display: flex;
-  background-color: #F3F3F3;
-  padding: 5px;
-  margin: 5px;
-
-}
-
-
-.dark-gray {
-  background-color: #4A4A4A;
-}
-
-/* TODO: Replace with image later */
-
 
 .flex-box {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
-
+  justify-content: left-text;  
 }
 
-#menu-nav_menu {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
-  background-color: #222;
-  opacity: 0.7;
-  color: white;
+.flex-item > li { 
+  width: 20%;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav > li { 
+  padding: 0 0 0 15%;
 }
 
 #center-text {
@@ -222,16 +154,11 @@ a {
 }
 
 .center-content {
-  padding: 100px 120px 0 120px;
+  padding: 10px 120px 0 120px;
   animation-name: myAnimation;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-
-}
-
-ul {
-  list-style-type: none;
 }
 
 .biopic {
@@ -258,53 +185,27 @@ img {
 }
 
 span {
+  text-align: center;
   padding: 5px;
 }
 
-#letsConnect {
-  text-align: center;
-}
-
-@media only screen and (max-width: 1024px) {
-  #letsConnect {
-    margin-top: 60px;
-  }
-}
-
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  #letsConnect {
-    margin-top: 120px;
-  }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
+.dark-gray {
+  background-color: #4A4A4A;
 }
 
 #map {
   display: block;
   height: 100%;
-  margin-left: 60px;
-  margin-right: 60px;
+  width: 100%;
+  border: solid 1px blue;
 }
 
 #mapDiv {
   height: 400px;
   width: 100%;
-  padding-bottom: 60px;
+  border: solid 1px yellow;
 }
 
-@media only screen and (min-width: 750px) {
-  #skillsH3,
-  .biopic {
-    display: block;
-  }
+#letsConnect {
+  text-align: center;
 }

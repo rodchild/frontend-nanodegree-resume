@@ -21,7 +21,7 @@ var HTMLmobile = '<li class="flex-item"><span class="white-text"><br>%data%<br><
 var HTMLemail = '<li class="flex-item"><a href="mailto:rodchild@gmail.com"><span class="white-text">%data%<br></a></span><span class="orange-text">email</span></li>';
 var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="white-text">%data%</span></li>';
 var HTMLgithub = '<li class="flex-item"><a href="http://github.com/rodchild" target="_self"><span class="white-text">%data%</a></span><span class="orange-text">github</span></li>';
-var HTMLlinkedin = '<li class="flex-item"><a href="http://ca.linkedin.com/in/ducarmel" target="_self"><span class="white-text">%data%</a></span><span class="orange-text">linkedin</span></li>';
+var HTMLlinkedin = '<li class="flex-item"> <a href="http://ca.linkedin.com/in/ducarmel" target="_self"><span class="white-text">%data%</a></span><span class="orange-text">linkedin</span></li>';
 var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="white-text"><br>%data%<br></span><span class="orange-text">location</span></li>';
 
@@ -31,7 +31,7 @@ var HTMLWelcomeMsg = '<span class="welcome-message">%data%</span>';
 var HTMLskillsStart = '<h3 id="skillsH3">Skills at a Glance:</h3><ul id="skills" class="flex-box"></ul>';
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
-var HTMLworkStart = '<div class="work-entry"></div>';
+var HTMLworkStart = '<div class="work-entry col-xs-12 col-sm-6 col-lg-3"></div>';
 var HTMLworkEmployer = '%data%';
 var HTMLworkTitle = '- %data%';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
@@ -45,7 +45,7 @@ var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img class="projectImage" src="%data%">';
 var HTMLprojectURL = '<br><a href="#">%data%</a>';
 
-var HTMLschoolStart = '<div class="education-entry"></div>';
+var HTMLschoolStart = '<div class="education-entry col-xs-12 col-sm-6 col-lg-6"></div>';
 var HTMLschoolName = '<a href="#">%data%';
 var HTMLschoolDegree = ' -- %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';

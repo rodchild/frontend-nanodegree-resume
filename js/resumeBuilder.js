@@ -27,10 +27,10 @@
      		[
      			{
      				employer: "Revel",
-     				title: "Programmer",
+     				title: "Web developer",
      				location: "Atlantic city, NJ",
      				dates: "2011 - 2013",
-     				description : "Builds software applications, follows coding standards. Communicates continually with the client and project teams. Translates designs and style guides provided by the UI/UX team into functional user interfaces. Ensuring cross browser compatibility and performance. Manipulates text and graphics to produce consistent presentation across all browser platforms."
+     				description : "Developed responsive front-end web applications that replicate design mockups. Achieved cross browser compatibility and performance. Lead intern programmers in acquiring programming methodologies and best practices."
 
      	    	},
 
@@ -40,7 +40,7 @@
      			title: "Programmer",
      			location: "Montreal, QC",
      			dates: "2010 - 2011",
-     			description : "Data table creation and stored procedures with MS SQL Server 2005. Convert existing MS Access applications into .NET applications using C#. Participate in the design of new applications. Program and debug an order management application."
+     			description : "Assisted in migrating order management application from MS Access to .NET. Created data table and stored procedures with MS SQL Server 2005. Helped reduce loss in the warehouse from 20% to 10%. Reduced conflicts risks and increase productivity of staff as acknowledged by managers."
      	     	},
 
      	     	{
@@ -49,7 +49,7 @@
      			title: "Web developer",
      			location: "Montreal, QC",
      			dates: "2009 - 2010",
-     			description : "Develop a set of web sites for the organization. The PHP language has been used with Joomla, a content manager and EasyPHP."
+     			description : "Developed a set of web sites for the organization. The PHP language has been used with Joomla, a content manager and EasyPHP."
 
      	     	},
 
@@ -58,7 +58,7 @@
      			title: "Technical support",
      			location: "Roseland, NJ",
      			dates: "2006 - 2009",
-     			description : "Install operating systems and appropriate software. Provide solutions to users hardware and software problems. Perform maintenance and updating of websites. Offer solutions to complex technical problems. Return defective products to vendors or technician for repair. Write technical documentation."
+     			description : "Managed linux operating systems, website maintenance and update. Reduced response time to customer requests by providing quick answers to their questions."
 
 
      	     	}
@@ -237,6 +237,7 @@
 
 		work.display = function()
         {
+            var i=0;
      		for(job in work.jobs)
      		{
      			$("#workExperience").append(HTMLworkStart);
@@ -250,7 +251,10 @@
                 $(".work-entry:last").append(formattedWorkLocation);
                 var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
                 $(".work-entry:last").append(formattedDescription);
-
+                if (i != work.jobs.length -1) {
+                    $(".work-entry:last").append("<hr>");
+                }
+                i++;
      		}
      	}
 //function to normalize the name
@@ -279,14 +283,14 @@
 
 		education.display = function()
 		{
-
+            var i = 0;
 			for(school in education.schools)
 			{
-
+                $("#education").append(HTMLschoolStart);
      			var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name).replace("#", education.schools[school].url);
                 //formattedSchoolName = HTMLschoolName.replace("#", education.schools[school].url);
                 var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-                $("#education").append(HTMLschoolStart);
+                //$("#education").append(HTMLschoolStart);
      			$(".education-entry:last").append(formattedSchoolName + formattedSchoolDegree);
 
 
@@ -300,6 +304,11 @@
 
      			var formattedSchoolMajors = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
      			$(".education-entry:last").append(formattedSchoolMajors);
+
+                if (i != education.schools.length -1) {
+                    $(".education-entry:last").append("<hr>");
+                }
+                i++;
 
      		}
 
