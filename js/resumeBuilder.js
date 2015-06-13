@@ -30,7 +30,7 @@
      				title: "Web developer",
      				location: "Atlantic city, NJ",
      				dates: "2011 - 2013",
-     				description : "Developed responsive front-end web applications that replicate design mockups. Achieved cross browser compatibility and performance. Lead intern programmers in acquiring programming methodologies and best practices."
+ 				    description : "Developed responsive front-end web applications that replicate design mockups.<br> Achieved cross browser compatibility and performance.<br> Lead intern programmers in acquiring programming methodologies and best practices."
 
      	    	},
 
@@ -40,7 +40,7 @@
      			title: "Programmer",
      			location: "Montreal, QC",
      			dates: "2010 - 2011",
-     			description : "Assisted in migrating order management application from MS Access to .NET. Created data table and stored procedures with MS SQL Server 2005. Helped reduce loss in the warehouse from 20% to 10%. Reduced conflicts risks and increase productivity of staff as acknowledged by managers."
+     			description : "Assisted in migrating order management application from MS Access to .NET.<br> Created data table and stored procedures with MS SQL Server 2005.<br> Helped reduce loss in the warehouse from 20% to 10%.<br> Reduced conflicts risks and increase productivity of staff as acknowledged by managers."
      	     	},
 
      	     	{
@@ -49,7 +49,7 @@
      			title: "Web developer",
      			location: "Montreal, QC",
      			dates: "2009 - 2010",
-     			description : "Developed a set of web sites for the organization. The PHP language has been used with Joomla, a content manager and EasyPHP."
+     			description : "Developed a set of web sites for the organization.<br> The PHP language has been used with Joomla, a content manager and EasyPHP."
 
      	     	},
 
@@ -58,7 +58,7 @@
      			title: "Technical support",
      			location: "Roseland, NJ",
      			dates: "2006 - 2009",
-     			description : "Managed linux operating systems, website maintenance and update. Reduced response time to customer requests by providing quick answers to their questions."
+     			description : "Managed linux operating systems, website maintenance and update.<br> Reduced response time to customer requests by providing quick answers to their questions."
 
 
      	     	}
@@ -245,10 +245,11 @@
      			var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
      			var formattedEmployerTitle = formattedEmployer + formattedTitle;
                 var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
-  				$(".work-entry:last").append(formattedEmployerTitle);
                 var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-                $(".work-entry:last").append(formattedDates);
-                $(".work-entry:last").append(formattedWorkLocation);
+                $(".work-entry:last").append(HTMLWorkEntry);
+                $(".oneWork:last").append(formattedEmployerTitle);
+                $(".oneWork:last").append(formattedDates)
+                $(".oneWork:last").append(formattedWorkLocation)
                 var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
                 $(".work-entry:last").append(formattedDescription);
                 if (i != work.jobs.length -1) {

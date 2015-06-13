@@ -18,7 +18,22 @@
   width: 100%; 
 }
 
-.work-entry, .education-entry > a {
+.oneWork {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.work-description  { 
+  border: solid 1px lightgray;
+  font-size: 16px;
+  color: #333333;
+  line-height: 25px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.education-entry > a {
  text-align: center;
 }
 
@@ -31,17 +46,12 @@ div > h2, h3 {
   text-align: center;
 }
 
-header {
- 
-}
-
 header > div > h2, h6 {
   color: white;
   color: #484848;
   margin: 0 0 2% 0;
   text-align: center;
 }
-
 
 h3 {
   /*font-style: italic;*/
@@ -57,7 +67,17 @@ h4 {
   line-height: 17px;
 }
 
-.date-text {
+.date-text, .workLocation-text {
+  font-style: italic;
+  color: #999999;
+  text-align: center;
+}
+
+.workLocation-text {
+  margin-top: -50px;
+}
+
+.schoolLocation-text {
   font-style: italic;
   font-size: 14px;
   color: #999999;
@@ -78,19 +98,10 @@ a > img {
   display: inline-block;
 }
 
-.location-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999999;
-  line-height: 16px;
-  text-align: center;
-
-}
-
-p {
-  font-size: 16px;
-  color: #333333;
-  line-height: 25px;
+#center-text {
+  background-color: skyblue;
+  border-radius: 10px;
+  margin: 10px 0 0 0;
   text-align: justify;
 }
 
@@ -145,20 +156,6 @@ ul {
 
 .nav > li { 
   padding: 0 0 0 15%;
-}
-
-#center-text {
-  background-color: skyblue;
-  border-radius: 10px;
-  margin: 10px 0 0 0;
-}
-
-.center-content {
-  padding: 10px 120px 0 120px;
-  animation-name: myAnimation;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 .biopic {
