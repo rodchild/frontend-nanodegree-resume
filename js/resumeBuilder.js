@@ -25,16 +25,6 @@
      	{
      		"jobs":
      		[
-     			{
-     				employer: "Revel",
-     				title: "Web developer",
-     				location: "Atlantic city, NJ",
-     				dates: "2011 - 2013",
- 				    description : "Developed responsive front-end web applications that replicate design mockups.<br> Achieved cross browser compatibility and performance.<br> Lead intern programmers in acquiring programming methodologies and best practices."
-
-     	    	},
-
-
      	    	{
      	    	employer: "Defence Canada",
      			title: "Programmer",
