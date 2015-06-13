@@ -49,7 +49,7 @@
      			title: "Web developer",
      			location: "Montreal, QC",
      			dates: "2009 - 2010",
-     			description : "Developed a set of web sites for the organization.<br> The PHP language has been used with Joomla, a content manager and EasyPHP."
+     			description : "Developed optimized front-end web applications that replicate design mockups.<br> Lead intern programmer in acquiring programming methodologies and best practices.<br> Extended organization visibility, increased volunteers participation of 10%."
 
      	     	},
 
