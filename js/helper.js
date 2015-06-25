@@ -16,14 +16,14 @@ var HTMLheaderName = '<h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<span>%data%</span><hr/>';
 var HTMLheaderMenu = '<span>%data%</span><hr/>';
 
-var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="white-text"><br>%data%<br></span><span class="orange-text">mobile</span></li>';
-var HTMLemail = '<li class="flex-item"><a href="mailto:rodchild@gmail.com"><span class="white-text">%data%<br></a></span><span class="orange-text">email</span></li>';
+var HTMLcontactGeneric = '<li><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
+var HTMLmobile = '<li class="col-xs-12 col-sm-2"><span class="white-text"><br>%data%<br></span><span class="orange-text">mobile</span></li>';
+var HTMLemail = '<li class="col-xs-12 col-sm-2"><a href="mailto:rodchild@gmail.com"><span class="white-text">%data%<br></a></span><span class="orange-text">email</span></li>';
 var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><a href="http://github.com/rodchild" target="_self"><span class="white-text">%data%</a></span><span class="orange-text">github</span></li>';
-var HTMLlinkedin = '<li class="flex-item"> <a href="http://ca.linkedin.com/in/ducarmel" target="_self"><span class="white-text">%data%</a></span><span class="orange-text">linkedin</span></li>';
+var HTMLgithub = '<li class="col-xs-12 col-sm-2"><a href="http://github.com/rodchild" target="_self"><span class="white-text">%data%</a></span><span class="orange-text">github</span></li>';
+var HTMLlinkedin = '<li class="col-xs-12 col-sm-2"> <a href="http://ca.linkedin.com/in/ducarmel" target="_self"><span class="white-text">%data%</a></span><span class="orange-text">linkedin</span></li>';
 var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
-var HTMLlocation = '<li class="flex-item"><span class="white-text"><br>%data%<br></span><span class="orange-text">location</span></li>';
+var HTMLlocation = '<li class="col-xs-12 col-sm-2"><span class="white-text"><br>%data%<br></span><span class="orange-text">location</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLWelcomeMsg = '<span class="welcome-message">%data%</span>';
@@ -34,11 +34,11 @@ var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></
 var HTMLworkStart = '<div class="work-entry row"></div>';
 var HTMLworkEmployer = '%data%';
 var HTMLworkTitle = ' - %data%';
-var HTMLWorkEntry = '<div class="oneWork col-xs-3 col-sm-3 col-lg-3" ></div>';
+var HTMLWorkEntry = '<div class="oneWork col-xs-5" ></div>';
 var HTMLworkDates = '<p class="date-text">%data%</p>';
 var HTMLworkLocation = '<p class="workLocation-text"><br>%data%</p>';
 
-var HTMLworkDescription = '<div class="work-description col-xs-9 col-sm-9 col-lg-9"><br>%data%</div>';
+var HTMLworkDescription = '<div class="work-description col-xs-7"><br>%data%</div>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
@@ -47,7 +47,7 @@ var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img class="projectImage" src="%data%">';
 var HTMLprojectURL = '<br><a href="#">%data%</a>';
 
-var HTMLschoolStart = '<div class="education-entry col-xs-12 col-sm-6 col-lg-6"></div>';
+var HTMLschoolStart = '<div class="education-entry col-xs-12 col-sm-6"></div>';
 var HTMLschoolName = '<a href="#">%data%';
 var HTMLschoolDegree = ' -- %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
