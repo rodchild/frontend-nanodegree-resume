@@ -7,7 +7,7 @@
      		"name": "Ducarmel Zephyr",
      		"role": "Web Developer",
      		"contacts": {
-     				"mobile": "613 501 0347",
+     				"mobile": "613 501 8433",
      				"email": "rodchild@gmail.com",
      				"github": "@rodchild",
                     "linkedin": "@ducarmel",
@@ -73,12 +73,12 @@
                     },
 
      				{
-     					"name": "College Bois de Boulogne",
-     					"location": "Montreal, QC",
+     					"name": "Algonquin College",
+     					"location": "Ottawa, ON",
      					"degree": "Computer Programmer",
      					"majors": ["CS"],
      					"dates": 2000,
-     					"url": "http://bdeb.qc.ca/",
+     					"url": "http://www.algonquincollege.com/",
 
 
      				}
